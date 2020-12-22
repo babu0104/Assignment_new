@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <div class="header"></div>
+    <div class="wrapper-container">
+        <h1 class="text-center main-heading">Result Of the Test</h1>
+
+        <div class="col-12 wrap">
+            <a class="hover-fx"><i class="fa fa-calendar"></i>
+                <h4>Never</h4>
+            </a>
+            <a class="hover-fx"><i class="fa fa-calendar-times-o"></i>
+                <h4>Occasionally</h4>
+            </a>
+            <a class="hover-fx"><i class="fa fa-clock-o"></i>
+                <h4>4 hours</h4>
+            </a>
+            <a class="hover-fx"><i class="fa fa-comment"></i>
+                <h4>Yearly</h4>
+            </a>
+            <a class="hover-fx"><i class="fa fa-calendar"></i>
+                <h4>Never</h4>
+            </a>
+        </div>
+        <div class="col-xs-3 col-sm-4 col-md-12 col-12 mr-b-25">
+            <div class="range-slider">
+                <form>
+                    <input class="range-slider__range" id="myRange" name="myRange" type="range" min="0" max="100"
+                        [(ngModel)]="sliderValue" #slider="ngModel" />
+                </form>
+            </div>
+            <div class="category-lbls">
+                <ul>
+                    <li><label>Less Relevant</label></li>
+                    <li><label>Relevant</label></li>
+                    <li><label>Very Relevant</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 mr-t-25 try-again">
+            <button type="button" (click)="triggerRange()" class="btn btn-outline-primary">TRY AGAIN <i
+                    class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</div>
